@@ -3,6 +3,33 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "static ChatUtils.createData(for : String) -&gt; String:ChatUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "&quot;{\&quot;\(KEY_TIMESTAMP)\&quot; = \&quot;\(timestamp)\&quot;, \&quot;\(KEY_TIMESTAMP)\&quot; = \&quot;\(text)\&quot; }&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PubnubChatRepository.client(PubNub, didReceiveMessage : PNMessageResult) -&gt; ():PubnubChatRepository.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "message.data.message as? [String:Any]">
+            </PersistentString>
+            <PersistentString
+               value = "message.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static ChatUtils.from(data : String) -&gt; TextEntry?:ChatUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TextViewController.(setup() -&gt; ()).(closure #2):TextViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -27,14 +54,6 @@
             </PersistentString>
             <PersistentString
                value = "difference.second">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "static ChatUtils.createData(for : String) -&gt; String:ChatUtils.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "&quot;{\&quot;\(KEY_TIMESTAMP)\&quot; = \&quot;\(timestamp)\&quot;, \&quot;\(KEY_TIMESTAMP)\&quot; = \&quot;\(text)\&quot; }&quot;">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

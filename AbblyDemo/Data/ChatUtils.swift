@@ -21,41 +21,48 @@ struct ChatUtils{
             KEY_TIMESTAMP : timestamp
         ]
         
-        //return "{\"\(KEY_TIMESTAMP)\" = \"\(timestamp)\", \"\(KEY_VALUE)\" = \"\(text)\" }"
+        return "{\"\(KEY_TIMESTAMP)\" : \"\(timestamp)\", \"\(KEY_VALUE)\" : \"\(text)\" }"
         
-        let jsonData: NSData
+        /*let jsonData: NSData
          do {
             jsonData = try JSONSerialization.data(withJSONObject: info, options: JSONSerialization.WritingOptions()) as NSData
             return NSString(data: jsonData as Data, encoding: String.Encoding.utf8.rawValue)! as String
          } catch _ {
             return "{\"\(KEY_TIMESTAMP)\" : \"\(timestamp)\", \"\(KEY_TIMESTAMP)\" : \"\(text)\" }"
-         }
-        
+        }*/
+    
     }
     
     static func from(data: String)-> TextEntry?{
         if let data = data.data(using: .utf8) {
             do {
                 let info = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                var content = "--", delay = "--", size = "--"
-                if let value = info?[KEY_VALUE] as? String{
-                    content = value
-                    size = "\(content.utf8.count) bytes"
-                }
-                if let messageTimestamp = info?[KEY_TIMESTAMP] as? String,
-                    let messageDate = df.date(from: messageTimestamp),
-                    let currentDate = df.date(from: getTimestamp()){
-                    let difference = currentDate.offset(from: messageDate)
-                    delay = "\(difference) ms"
-                }
-                return TextEntry(value: content, delay: delay, size: size)
-                
+                return from(dictionary: info)
             } catch {
                 print(error.localizedDescription)
             }
         }
         return nil
         
+    }
+    
+    static func from(dictionary: [String:Any]?) -> TextEntry?{
+        guard let info = dictionary else {
+            return nil
+        }
+        
+        var content = "--", delay = "--", size = "--"
+        if let value = info[KEY_VALUE] as? String{
+            content = value
+            size = "\(content.utf8.count) bytes"
+        }
+        if let messageTimestamp = info[KEY_TIMESTAMP] as? String,
+            let messageDate = df.date(from: messageTimestamp),
+            let currentDate = df.date(from: getTimestamp()){
+            let difference = currentDate.offset(from: messageDate)
+            delay = "\(difference) ms"
+        }
+        return TextEntry(value: content, delay: delay, size: size)
     }
     
     private static func getTimestamp() -> String {

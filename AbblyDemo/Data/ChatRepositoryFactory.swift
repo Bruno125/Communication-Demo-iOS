@@ -15,6 +15,8 @@ class ChatRepositoryFactory{
         switch type {
         case .ably:
             return AblyChatRepository()
+        case .pubnub:
+            return PubnubChatRepository()
         default:
             return AblyChatRepository()
         }

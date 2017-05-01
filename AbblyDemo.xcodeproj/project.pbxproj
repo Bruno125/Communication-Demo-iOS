@@ -13,6 +13,7 @@
 		39A2A3C91EB5605E000B434E /* TextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3C81EB5605E000B434E /* TextEntry.swift */; };
 		39A2A3CB1EB56092000B434E /* ChatRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3CA1EB56092000B434E /* ChatRepositoryFactory.swift */; };
 		39A2A3CD1EB6E483000B434E /* ChatUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3CC1EB6E483000B434E /* ChatUtils.swift */; };
+		39A2A3CF1EB6F03F000B434E /* PubnubChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3CE1EB6F03F000B434E /* PubnubChatRepository.swift */; };
 		39FD14A01EAC14C2008EBE66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD149F1EAC14C2008EBE66 /* AppDelegate.swift */; };
 		39FD14A21EAC14C2008EBE66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD14A11EAC14C2008EBE66 /* ViewController.swift */; };
 		39FD14A51EAC14C2008EBE66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FD14A31EAC14C2008EBE66 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		39A2A3C81EB5605E000B434E /* TextEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextEntry.swift; path = Data/TextEntry.swift; sourceTree = "<group>"; };
 		39A2A3CA1EB56092000B434E /* ChatRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatRepositoryFactory.swift; path = Data/ChatRepositoryFactory.swift; sourceTree = "<group>"; };
 		39A2A3CC1EB6E483000B434E /* ChatUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatUtils.swift; path = Data/ChatUtils.swift; sourceTree = "<group>"; };
+		39A2A3CE1EB6F03F000B434E /* PubnubChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PubnubChatRepository.swift; path = Data/Impl/PubnubChatRepository.swift; sourceTree = "<group>"; };
 		39FD149C1EAC14C2008EBE66 /* AbblyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbblyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FD149F1EAC14C2008EBE66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FD14A11EAC14C2008EBE66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				3931762E1EB5595500A11FFC /* AblyChatRepository.swift */,
+				39A2A3CE1EB6F03F000B434E /* PubnubChatRepository.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				3931762F1EB5595500A11FFC /* AblyChatRepository.swift in Sources */,
 				39A2A3CB1EB56092000B434E /* ChatRepositoryFactory.swift in Sources */,
 				39FD14A21EAC14C2008EBE66 /* ViewController.swift in Sources */,
+				39A2A3CF1EB6F03F000B434E /* PubnubChatRepository.swift in Sources */,
 				39A2A3CD1EB6E483000B434E /* ChatUtils.swift in Sources */,
 				39FD14A01EAC14C2008EBE66 /* AppDelegate.swift in Sources */,
 				39FD14B21EAC1559008EBE66 /* TextViewController.swift in Sources */,

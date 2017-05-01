@@ -16,7 +16,6 @@ class AblyChatRepository : ChatRepository{
     private static let CHANNEL_NAME = "chat"
     let client = ARTRealtime(key: API_KEY)
     var channel : ARTRealtimeChannel?
-    let dateFormatter = DateFormatter()
     private var messagesSubject = PublishSubject<TextEntry>()
     
     init() {
