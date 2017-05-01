@@ -1,0 +1,30 @@
+PODS:
+  - Ably (0.8.9):
+    - msgpack (= 0.1.8)
+    - SocketRocket (= 0.5.1)
+  - msgpack (0.1.8)
+  - PubNub (4.5.13):
+    - PubNub/Core (= 4.5.13)
+  - PubNub/Core (4.5.13)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.2.0)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - Ably
+  - PubNub (~> 4)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+
+SPEC CHECKSUMS:
+  Ably: be22798539ea49127d86d1e453dce69007605eac
+  msgpack: 97491d2ea799408f4694f2c7d7fd79baf77853dd
+  PubNub: 53711c37f9bcd8f927f154ca91774910a6b552ed
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 14963e8b03d0adb9cfc60e7d73a98fc479982b03
+
+COCOAPODS: 1.2.0
