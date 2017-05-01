@@ -16,21 +16,15 @@ struct ChatUtils{
     
     static func createData(for text: String) -> String{
         let timestamp = getTimestamp()
-        let info : [String : String] = [
-            KEY_VALUE : text,
-            KEY_TIMESTAMP : timestamp
-        ]
         
         return "{\"\(KEY_TIMESTAMP)\" : \"\(timestamp)\", \"\(KEY_VALUE)\" : \"\(text)\" }"
-        
-        /*let jsonData: NSData
-         do {
-            jsonData = try JSONSerialization.data(withJSONObject: info, options: JSONSerialization.WritingOptions()) as NSData
-            return NSString(data: jsonData as Data, encoding: String.Encoding.utf8.rawValue)! as String
-         } catch _ {
-            return "{\"\(KEY_TIMESTAMP)\" : \"\(timestamp)\", \"\(KEY_TIMESTAMP)\" : \"\(text)\" }"
-        }*/
     
+    }
+    
+    static func createDictionaryData(for text: String) -> [String: String]{
+        let timestamp = getTimestamp()
+        return [ KEY_VALUE : text, KEY_TIMESTAMP : timestamp ]
+        
     }
     
     static func from(data: String)-> TextEntry?{

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		175E64540E7031F4CBBD72FB /* Pods_AbblyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F834249794F07AC7C00DAB7 /* Pods_AbblyDemo.framework */; };
+		391A3BB51EB7E4C000A4999F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB41EB7E4C000A4999F /* GoogleService-Info.plist */; };
 		3931762C1EB5542F00A11FFC /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931762B1EB5542F00A11FFC /* ChatRepository.swift */; };
 		3931762F1EB5595500A11FFC /* AblyChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3931762E1EB5595500A11FFC /* AblyChatRepository.swift */; };
 		39A2A3C91EB5605E000B434E /* TextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3C81EB5605E000B434E /* TextEntry.swift */; };
 		39A2A3CB1EB56092000B434E /* ChatRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3CA1EB56092000B434E /* ChatRepositoryFactory.swift */; };
 		39A2A3CD1EB6E483000B434E /* ChatUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3CC1EB6E483000B434E /* ChatUtils.swift */; };
 		39A2A3CF1EB6F03F000B434E /* PubnubChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3CE1EB6F03F000B434E /* PubnubChatRepository.swift */; };
+		39A2A3D11EB7E07A000B434E /* FirebaseChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2A3D01EB7E07A000B434E /* FirebaseChatRepository.swift */; };
 		39FD14A01EAC14C2008EBE66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD149F1EAC14C2008EBE66 /* AppDelegate.swift */; };
 		39FD14A21EAC14C2008EBE66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD14A11EAC14C2008EBE66 /* ViewController.swift */; };
 		39FD14A51EAC14C2008EBE66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FD14A31EAC14C2008EBE66 /* Main.storyboard */; };
@@ -25,12 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		391A3BB41EB7E4C000A4999F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3931762B1EB5542F00A11FFC /* ChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatRepository.swift; path = Data/ChatRepository.swift; sourceTree = "<group>"; };
 		3931762E1EB5595500A11FFC /* AblyChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AblyChatRepository.swift; path = Data/Impl/AblyChatRepository.swift; sourceTree = "<group>"; };
 		39A2A3C81EB5605E000B434E /* TextEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextEntry.swift; path = Data/TextEntry.swift; sourceTree = "<group>"; };
 		39A2A3CA1EB56092000B434E /* ChatRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatRepositoryFactory.swift; path = Data/ChatRepositoryFactory.swift; sourceTree = "<group>"; };
 		39A2A3CC1EB6E483000B434E /* ChatUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatUtils.swift; path = Data/ChatUtils.swift; sourceTree = "<group>"; };
 		39A2A3CE1EB6F03F000B434E /* PubnubChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PubnubChatRepository.swift; path = Data/Impl/PubnubChatRepository.swift; sourceTree = "<group>"; };
+		39A2A3D01EB7E07A000B434E /* FirebaseChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseChatRepository.swift; path = Data/Impl/FirebaseChatRepository.swift; sourceTree = "<group>"; };
 		39FD149C1EAC14C2008EBE66 /* AbblyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbblyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FD149F1EAC14C2008EBE66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FD14A11EAC14C2008EBE66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			children = (
 				3931762E1EB5595500A11FFC /* AblyChatRepository.swift */,
 				39A2A3CE1EB6F03F000B434E /* PubnubChatRepository.swift */,
+				39A2A3D01EB7E07A000B434E /* FirebaseChatRepository.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		39FD149E1EAC14C2008EBE66 /* AbblyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				391A3BB41EB7E4C000A4999F /* GoogleService-Info.plist */,
 				3931762A1EB5541800A11FFC /* Data */,
 				39FD14B31EAC15DB008EBE66 /* JsonFileReader.swift */,
 				39FD14B41EAC15DB008EBE66 /* TextEntryCell.swift */,
@@ -195,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39FD14AA1EAC14C2008EBE66 /* LaunchScreen.storyboard in Resources */,
+				391A3BB51EB7E4C000A4999F /* GoogleService-Info.plist in Resources */,
 				39FD14A71EAC14C2008EBE66 /* Assets.xcassets in Resources */,
 				39FD14A51EAC14C2008EBE66 /* Main.storyboard in Resources */,
 			);
@@ -255,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A2A3D11EB7E07A000B434E /* FirebaseChatRepository.swift in Sources */,
 				39FD14B51EAC15DB008EBE66 /* JsonFileReader.swift in Sources */,
 				39A2A3C91EB5605E000B434E /* TextEntry.swift in Sources */,
 				3931762C1EB5542F00A11FFC /* ChatRepository.swift in Sources */,
@@ -394,7 +402,7 @@
 				DEVELOPMENT_TEAM = VK59D6Z27Q;
 				INFOPLIST_FILE = AbblyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.AbblyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -408,7 +416,7 @@
 				DEVELOPMENT_TEAM = VK59D6Z27Q;
 				INFOPLIST_FILE = AbblyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.AbblyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

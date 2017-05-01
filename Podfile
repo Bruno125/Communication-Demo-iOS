@@ -10,5 +10,7 @@ target 'AbblyDemo' do
   pod "PubNub", "~> 4"
   pod 'RxSwift',    '~> 3.0'
   pod 'RxCocoa',    '~> 3.0'
+  pod 'Firebase'
+  pod 'Firebase/Database'
 
 end
