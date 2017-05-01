@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AbblyDemo.xcscheme</key>
+		<key>Pods-ChatDemos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,17 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>18B5EF3E95FB7DD91D05287DB13BE120</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2805C1C704C8990DD062466E0A84492A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>30CB12423A355BC8AB02EACF4E18F60C</key>
+		<key>159544519FCF92BF5057B8CF2D001EBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F85C3C583425F939D0D278585DBC7F4</key>
+		<key>8F0DDAC0543C9922E2F3B667A7A11900</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>97DD7C3B5C4107D5F745E9176D8EAFFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFF7A1F31C2F58C0550E23B98F4CD41D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE2AEE1DE96D3AADD19ABA9624547052</key>
 		<dict>
 			<key>primary</key>
 			<true/>
