@@ -46,13 +46,15 @@ class PubnubChatRepository : NSObject,ChatRepository,PNObjectEventListener{
     
     // Handle new message from one of channels on which client has been subscribed.
     func client(_ client: PubNub, didReceiveMessage message: PNMessageResult) {
-        guard let data = message.data.message as? [String:Any] else{
-            return
+        var entry: TextEntry?
+        if let data = message.data.message as? [String:Any] {
+            entry = ChatUtils.from(dictionary: data)
+        }else if let dataString = message.data.message as? String{
+            entry = ChatUtils.from(data: dataString)
         }
-        if let entry = ChatUtils.from(dictionary: data){
-            messagesSubject.onNext(entry)
+        if entry != nil{
+            messagesSubject.onNext(entry!)
         }
-        
     }
     
 }
