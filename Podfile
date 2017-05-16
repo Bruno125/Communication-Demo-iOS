@@ -12,5 +12,6 @@ target 'ChatDemos' do
   pod 'RxCocoa',    '~> 3.0'
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Lightstreamer_iOS_Client', '2.1.2'
 
 end

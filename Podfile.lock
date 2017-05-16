@@ -22,6 +22,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Lightstreamer_iOS_Client (2.1.2)
   - msgpack (0.1.8)
   - PubNub (4.5.13):
     - PubNub/Core (= 4.5.13)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - Ably
   - Firebase
   - Firebase/Database
+  - Lightstreamer_iOS_Client (= 2.1.2)
   - PubNub (~> 4)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
@@ -47,12 +49,13 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Lightstreamer_iOS_Client: 42021e53dbb3d06f0eea74411f24f9d03729c9e8
   msgpack: 97491d2ea799408f4694f2c7d7fd79baf77853dd
   PubNub: 53711c37f9bcd8f927f154ca91774910a6b552ed
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: c1cd69b1448e2c84c76c8c84d14096227ae6b679
+PODFILE CHECKSUM: 045457e601e7af88c9b66ab992e2f048d2e05a90
 
 COCOAPODS: 1.2.0

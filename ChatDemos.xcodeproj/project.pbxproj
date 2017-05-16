@@ -24,6 +24,7 @@
 		391A3BDB1EB7E5F800A4999F /* AblyChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD81EB7E5F800A4999F /* AblyChatRepository.swift */; };
 		391A3BDC1EB7E5F800A4999F /* FirebaseChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD91EB7E5F800A4999F /* FirebaseChatRepository.swift */; };
 		391A3BDD1EB7E5F800A4999F /* PubnubChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */; };
+		39A66B1D1EC79C2B009B24BB /* LightStreamerChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */; };
 		CCAEB85BD9546EC4C8F0470D /* Pods_ChatDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		391A3BD81EB7E5F800A4999F /* AblyChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AblyChatRepository.swift; path = ChatDemos/Data/Impl/AblyChatRepository.swift; sourceTree = SOURCE_ROOT; };
 		391A3BD91EB7E5F800A4999F /* FirebaseChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseChatRepository.swift; path = ChatDemos/Data/Impl/FirebaseChatRepository.swift; sourceTree = SOURCE_ROOT; };
 		391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PubnubChatRepository.swift; path = ChatDemos/Data/Impl/PubnubChatRepository.swift; sourceTree = SOURCE_ROOT; };
+		39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightStreamerChatRepository.swift; path = ChatDemos/Data/Impl/LightStreamerChatRepository.swift; sourceTree = SOURCE_ROOT; };
 		39FD149C1EAC14C2008EBE66 /* ChatDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC17D995D64E96BC07FB7AC /* Pods-ChatDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatDemos/Pods-ChatDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		53E2EE868D93D27E5716F12C /* Pods-AbblyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbblyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AbblyDemo/Pods-AbblyDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				391A3BD81EB7E5F800A4999F /* AblyChatRepository.swift */,
 				391A3BD91EB7E5F800A4999F /* FirebaseChatRepository.swift */,
 				391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */,
+				39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				391A3BD31EB7E5EC00A4999F /* ChatRepository.swift in Sources */,
 				391A3BD41EB7E5EC00A4999F /* ChatRepositoryFactory.swift in Sources */,
 				391A3BD51EB7E5EC00A4999F /* ChatUtils.swift in Sources */,
+				39A66B1D1EC79C2B009B24BB /* LightStreamerChatRepository.swift in Sources */,
 				391A3BD61EB7E5EC00A4999F /* TextEntry.swift in Sources */,
 				391A3BDB1EB7E5F800A4999F /* AblyChatRepository.swift in Sources */,
 				391A3BC41EB7E5BB00A4999F /* JsonFileReader.swift in Sources */,
@@ -415,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatDemos/ChatDemos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,6 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatDemos/ChatDemos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
