@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256219CBCE51225AE8D3F392 /* Pods_ChatDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */; };
 		391A3BBF1EB7E5BB00A4999F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BB61EB7E5BB00A4999F /* AppDelegate.swift */; };
 		391A3BC01EB7E5BB00A4999F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB71EB7E5BB00A4999F /* Assets.xcassets */; };
 		391A3BC21EB7E5BB00A4999F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB91EB7E5BB00A4999F /* GoogleService-Info.plist */; };
@@ -24,11 +25,13 @@
 		391A3BDB1EB7E5F800A4999F /* AblyChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD81EB7E5F800A4999F /* AblyChatRepository.swift */; };
 		391A3BDC1EB7E5F800A4999F /* FirebaseChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD91EB7E5F800A4999F /* FirebaseChatRepository.swift */; };
 		391A3BDD1EB7E5F800A4999F /* PubnubChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */; };
+		3960F7D11ECBBC8A0044996F /* ChatInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3960F7D01ECBBC8A0044996F /* ChatInjection.swift */; };
 		39A66B1D1EC79C2B009B24BB /* LightStreamerChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */; };
 		CCAEB85BD9546EC4C8F0470D /* Pods_ChatDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2549A801357315B8BB4E5D62 /* Pods_ChatDemos_Ably.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Ably.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		391A3BB61EB7E5BB00A4999F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ChatDemos/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		391A3BB71EB7E5BB00A4999F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ChatDemos/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		391A3BB91EB7E5BB00A4999F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "ChatDemos/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -46,13 +49,26 @@
 		391A3BD81EB7E5F800A4999F /* AblyChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AblyChatRepository.swift; path = ChatDemos/Data/Impl/AblyChatRepository.swift; sourceTree = SOURCE_ROOT; };
 		391A3BD91EB7E5F800A4999F /* FirebaseChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseChatRepository.swift; path = ChatDemos/Data/Impl/FirebaseChatRepository.swift; sourceTree = SOURCE_ROOT; };
 		391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PubnubChatRepository.swift; path = ChatDemos/Data/Impl/PubnubChatRepository.swift; sourceTree = SOURCE_ROOT; };
+		3960F7CC1ECBBBF40044996F /* ChatInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatInjection.swift; path = ChatDemos/Targets/Firebase/ChatInjection.swift; sourceTree = SOURCE_ROOT; };
+		3960F7CE1ECBBC5A0044996F /* ChatInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatInjection.swift; path = ChatDemos/Targets/Ably/ChatInjection.swift; sourceTree = SOURCE_ROOT; };
+		3960F7D01ECBBC8A0044996F /* ChatInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatInjection.swift; path = ChatDemos/Targets/Lightstreamer/ChatInjection.swift; sourceTree = SOURCE_ROOT; };
+		3960F7D21ECBBC9A0044996F /* ChatInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatInjection.swift; path = ChatDemos/Targets/Pubnub/ChatInjection.swift; sourceTree = SOURCE_ROOT; };
+		3960F8631ECBBE190044996F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatDemos/Targets/Firebase/Info.plist; sourceTree = SOURCE_ROOT; };
+		3960F8651ECBBE220044996F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatDemos/Targets/Ably/Info.plist; sourceTree = SOURCE_ROOT; };
+		3960F8671ECBBE2F0044996F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatDemos/Targets/Pubnub/Info.plist; sourceTree = SOURCE_ROOT; };
+		3960F8691ECBBE3C0044996F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatDemos/Targets/Lightstreamer/Info.plist; sourceTree = SOURCE_ROOT; };
 		39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightStreamerChatRepository.swift; path = ChatDemos/Data/Impl/LightStreamerChatRepository.swift; sourceTree = SOURCE_ROOT; };
 		39FD149C1EAC14C2008EBE66 /* ChatDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBEEB0044F615B0FB19ADB5 /* Pods_ChatDemos_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC17D995D64E96BC07FB7AC /* Pods-ChatDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatDemos/Pods-ChatDemos.debug.xcconfig"; sourceTree = "<group>"; };
-		53E2EE868D93D27E5716F12C /* Pods-AbblyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbblyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AbblyDemo/Pods-AbblyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		50DB445FC518B76C074D0ADF /* Pods_Ably.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ably.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5686A3C9C369D4F5A989D5CF /* Pods_ChatDemos_Pubnub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Pubnub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D5C5178ED3EE777F50CE33 /* Pods_ChatDemos_Lightstreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Lightstreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF1D1AEAF68E389AA6B5FB2 /* Pods_Pubnub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pubnub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B71273990CD9013473517B /* Pods_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F834249794F07AC7C00DAB7 /* Pods_AbblyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbblyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA5898F2341CC07A058869E5 /* Pods-AbblyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbblyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AbblyDemo/Pods-AbblyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CC4056955AE63B76D87CA197 /* Pods_Lightstreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lightstreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E1C4D6A45003AD88758528 /* Pods-ChatDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatDemos/Pods-ChatDemos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCAEB85BD9546EC4C8F0470D /* Pods_ChatDemos.framework in Frameworks */,
+				256219CBCE51225AE8D3F392 /* Pods_ChatDemos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +108,53 @@
 			name = Impl;
 			sourceTree = "<group>";
 		};
+		3960F7C71ECBBB410044996F /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				3960F7CA1ECBBB580044996F /* Firebase */,
+				3960F7C81ECBBB480044996F /* Ably */,
+				3960F7C91ECBBB4E0044996F /* Pubnub */,
+				3960F7CB1ECBBB620044996F /* Lightstreamer */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		3960F7C81ECBBB480044996F /* Ably */ = {
+			isa = PBXGroup;
+			children = (
+				3960F8651ECBBE220044996F /* Info.plist */,
+				3960F7CE1ECBBC5A0044996F /* ChatInjection.swift */,
+			);
+			name = Ably;
+			sourceTree = "<group>";
+		};
+		3960F7C91ECBBB4E0044996F /* Pubnub */ = {
+			isa = PBXGroup;
+			children = (
+				3960F8671ECBBE2F0044996F /* Info.plist */,
+				3960F7D01ECBBC8A0044996F /* ChatInjection.swift */,
+			);
+			name = Pubnub;
+			sourceTree = "<group>";
+		};
+		3960F7CA1ECBBB580044996F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3960F8631ECBBE190044996F /* Info.plist */,
+				3960F7CC1ECBBBF40044996F /* ChatInjection.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		3960F7CB1ECBBB620044996F /* Lightstreamer */ = {
+			isa = PBXGroup;
+			children = (
+				3960F8691ECBBE3C0044996F /* Info.plist */,
+				3960F7D21ECBBC9A0044996F /* ChatInjection.swift */,
+			);
+			name = Lightstreamer;
+			sourceTree = "<group>";
+		};
 		39FD14931EAC14C2008EBE66 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +176,7 @@
 		39FD149E1EAC14C2008EBE66 /* ChatDemos */ = {
 			isa = PBXGroup;
 			children = (
+				3960F7C71ECBBB410044996F /* Targets */,
 				391A3BCE1EB7E5DC00A4999F /* Data */,
 				391A3BC81EB7E5D600A4999F /* LaunchScreen.storyboard */,
 				391A3BCA1EB7E5D600A4999F /* Main.storyboard */,
@@ -133,6 +198,14 @@
 			children = (
 				9F834249794F07AC7C00DAB7 /* Pods_AbblyDemo.framework */,
 				B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */,
+				2549A801357315B8BB4E5D62 /* Pods_ChatDemos_Ably.framework */,
+				3EBEEB0044F615B0FB19ADB5 /* Pods_ChatDemos_Firebase.framework */,
+				70D5C5178ED3EE777F50CE33 /* Pods_ChatDemos_Lightstreamer.framework */,
+				5686A3C9C369D4F5A989D5CF /* Pods_ChatDemos_Pubnub.framework */,
+				50DB445FC518B76C074D0ADF /* Pods_Ably.framework */,
+				80B71273990CD9013473517B /* Pods_Firebase.framework */,
+				CC4056955AE63B76D87CA197 /* Pods_Lightstreamer.framework */,
+				7FF1D1AEAF68E389AA6B5FB2 /* Pods_Pubnub.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,8 +213,6 @@
 		FA5B600D8CD2C0CA451E2766 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BA5898F2341CC07A058869E5 /* Pods-AbblyDemo.debug.xcconfig */,
-				53E2EE868D93D27E5716F12C /* Pods-AbblyDemo.release.xcconfig */,
 				4FC17D995D64E96BC07FB7AC /* Pods-ChatDemos.debug.xcconfig */,
 				E7E1C4D6A45003AD88758528 /* Pods-ChatDemos.release.xcconfig */,
 			);
@@ -276,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				391A3BC71EB7E5BB00A4999F /* ViewController.swift in Sources */,
+				3960F7D11ECBBC8A0044996F /* ChatInjection.swift in Sources */,
 				391A3BDD1EB7E5F800A4999F /* PubnubChatRepository.swift in Sources */,
 				391A3BD31EB7E5EC00A4999F /* ChatRepository.swift in Sources */,
 				391A3BD41EB7E5EC00A4999F /* ChatRepositoryFactory.swift in Sources */,

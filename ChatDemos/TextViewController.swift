@@ -18,7 +18,7 @@ class TextViewController : UIViewController {
     @IBOutlet var textField: UITextField!
     
     var entries : [TextEntry] = []
-    var repository = ChatRepositoryFactory.create(type: .pubnub)
+    var repository = ChatInjection.repository
     let disposeBag = DisposeBag()
     
     
