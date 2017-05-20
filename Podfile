@@ -18,3 +18,8 @@ target 'ChatDemos' do
   useful_pods
 end
 
+
+target 'DemoFirebase' do
+  useful_pods
+end
+
