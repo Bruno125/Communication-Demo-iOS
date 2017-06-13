@@ -12,7 +12,7 @@ import RxSwift
 class LightStreamerChatRepository: NSObject, ChatRepository{
     
     // Configuration for local installation
-    let SERVER_URL = "http://10.11.80.79:8080"
+    let SERVER_URL = "http://10.11.80.88:8080"
     let ADAPTER_SET = "CHAT"
     let DATA_ADAPTER = "CHAT_ROOM"
     
@@ -22,28 +22,37 @@ class LightStreamerChatRepository: NSObject, ChatRepository{
      let DATA_ADAPTER = "CHAT_ROOM"
      */
     
-    let _client : LSLightstreamerClient
-    let _subscription : LSSubscription
+    var _client : LSLightstreamerClient!
+    var _subscription : LSSubscription!
     var messagesSubject = PublishSubject<TextEntry>()
 
     required override init() {
-        _client = LSLightstreamerClient(serverAddress: SERVER_URL, adapterSet: ADAPTER_SET)
-        _subscription = LSSubscription(subscriptionMode: "DISTINCT", item: "chat_room", fields: ["message", "raw_timestamp", "IP"])
+        
         super.init()
         
-        // Start LS connection (executes in background)
-        self._client.connect()
         
-        // Start subscription (executes in background)
-        self._subscription.dataAdapter = DATA_ADAPTER
-        self._subscription.requestedSnapshot = "yes"
-        self._subscription.addDelegate(self)
-        self._client.subscribe(_subscription)
+        _subscription = LSSubscription(subscriptionMode: "DISTINCT", item: "chat_room", fields: ["message", "raw_timestamp", "IP"])
+        _subscription.dataAdapter = DATA_ADAPTER
+        _subscription.requestedSnapshot = "yes"
+        _subscription.addDelegate(self)
+        
+        
+        _client = LSLightstreamerClient(serverAddress: SERVER_URL, adapterSet: ADAPTER_SET)
+        _client.connectionDetails.serverAddress = SERVER_URL
+        
+        
+        _client.addDelegate(self)
+        _client.subscribe(_subscription)
+        _client.connect()
+        
     }
     
     func send(message: String){
+        
+        
+        
         // Send the message (executes in background)
-        self._client.sendMessage("CHAT|" + message)
+        self._client.sendMessage("CHAT|" + ChatUtils.createData(for: message))
     }
     
     func receive() -> Observable<TextEntry>{
@@ -53,7 +62,8 @@ class LightStreamerChatRepository: NSObject, ChatRepository{
 }
 
 extension LightStreamerChatRepository : LSClientDelegate,LSSubscriptionDelegate{
-    func subscription(_ subscription: LSSubscription, didClearSnapshotForItemName itemName: String?, itemPos: UInt) {}
+    func subscription(_ subscription: LSSubscription, didClearSnapshotForItemName itemName: String?, itemPos: UInt) {
+    }
     
     func subscription(_ subscription: LSSubscription, didEndSnapshotForItemName itemName: String?, itemPos: UInt) {
         NSLog("LS Subscription snapshot did end")
@@ -82,5 +92,13 @@ extension LightStreamerChatRepository : LSClientDelegate,LSSubscriptionDelegate{
         NSLog("LS Subscription did unsusbcribe")
     }
     
+    
+    func client(_ client: LSLightstreamerClient, didReceiveServerError errorCode: Int, withMessage errorMessage: String?) {
+        NSLog("didReceiveServerError")
+    }
+    
+    func client(_ client: LSLightstreamerClient, didChangeStatus status: String) {
+        NSLog("did change status: \(status)")
+    }
     
 }

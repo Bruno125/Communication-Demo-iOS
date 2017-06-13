@@ -23,3 +23,12 @@ target 'DemoFirebase' do
   useful_pods
 end
 
+
+target 'DemoAbly' do
+  useful_pods
+end
+
+
+target 'DemoPubnub' do
+  useful_pods
+end

@@ -16,13 +16,14 @@ struct ChatUtils{
     
     static func createData(for text: String) -> String{
         let timestamp = getTimestamp()
-        
+        print("Sent: \(timestamp)")
         return "{\"\(KEY_TIMESTAMP)\" : \"\(timestamp)\", \"\(KEY_VALUE)\" : \"\(text)\" }"
     
     }
     
     static func createDictionaryData(for text: String) -> [String: String]{
         let timestamp = getTimestamp()
+        print("Sent: \(timestamp)")
         return [ KEY_VALUE : text, KEY_TIMESTAMP : timestamp ]
         
     }
@@ -60,6 +61,8 @@ struct ChatUtils{
     }
     
     private static func getTimestamp() -> String {
+        //let a =  String(Int((Date().timeIntervalSince1970 * 1000.0).rounded()))
+        //print("Salida: \(a)")
         let d = Date()
         df.dateFormat = "y-MM-dd H:m:ss.SSSS"
         return df.string(from: d)

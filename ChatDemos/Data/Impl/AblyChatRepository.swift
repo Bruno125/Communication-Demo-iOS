@@ -23,6 +23,8 @@ class AblyChatRepository : ChatRepository{
         client.connection.on { state in }
         channel = client.channels.get(AblyChatRepository.CHANNEL_NAME)
         channel?.subscribe { message in
+            let now = String(Int((Date().timeIntervalSince1970 * 1000.0).rounded()))
+            print("Llegada: \(now)")
             guard let data = message.data as? String else {
                 return
             }

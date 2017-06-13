@@ -33,7 +33,7 @@ class TextViewController : UIViewController {
     }
     
     private func setup(){
-        repository.receive().subscribe(onNext: { entry in
+        repository.receive().observeOn(MainScheduler.instance).subscribe(onNext: { entry in
             self.entries.insert(entry, at: 0)
             self.tableView.reloadData()
         }).addDisposableTo(disposeBag)

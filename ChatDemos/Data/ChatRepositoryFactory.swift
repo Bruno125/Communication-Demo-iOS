@@ -19,6 +19,8 @@ class ChatRepositoryFactory{
             return FirebaseChatRepository()
         case .pubnub:
             return PubnubChatRepository()
+        case .lightstreamer:
+            return LightStreamerChatRepository()
         default:
             return AblyChatRepository()
         }
@@ -32,5 +34,5 @@ enum ChatType {
     case signalR
     case ably
     case pubnub
-    
+    case lightstreamer
 }

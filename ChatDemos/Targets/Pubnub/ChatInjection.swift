@@ -9,5 +9,5 @@
 import Foundation
 
 class ChatInjection {
-    static let repository = ChatRepositoryFactory.create(type: .firebase)
+    static let repository = ChatRepositoryFactory.create(type: .lightstreamer)
 }
