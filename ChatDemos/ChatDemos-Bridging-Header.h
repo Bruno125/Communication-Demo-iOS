@@ -3,3 +3,4 @@
 //
 
 #import <Lightstreamer_iOS_Client/Lightstreamer_iOS_Client.h>
+#import <RMQClient/RMQClient.h>

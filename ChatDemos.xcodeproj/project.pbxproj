@@ -48,6 +48,32 @@
 		399A40AE1EDA3AD0005E1892 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB91EB7E5BB00A4999F /* GoogleService-Info.plist */; };
 		399A40B61EDA3BAB005E1892 /* ChatInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3960F7D21ECBBC9A0044996F /* ChatInjection.swift */; };
 		39A66B1D1EC79C2B009B24BB /* LightStreamerChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */; };
+		39AA2D941EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */; };
+		39AA2D951EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */; };
+		39AA2D961EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */; };
+		39AA2D971EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */; };
+		39AA2D981EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */; };
+		39AA2D9C1EF0AD6600B01384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BBE1EB7E5BB00A4999F /* ViewController.swift */; };
+		39AA2D9D1EF0AD6600B01384 /* PubnubChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */; };
+		39AA2D9E1EF0AD6600B01384 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BCF1EB7E5EC00A4999F /* ChatRepository.swift */; };
+		39AA2D9F1EF0AD6600B01384 /* ChatRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD01EB7E5EC00A4999F /* ChatRepositoryFactory.swift */; };
+		39AA2DA01EF0AD6600B01384 /* ChatInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3960F7D21ECBBC9A0044996F /* ChatInjection.swift */; };
+		39AA2DA11EF0AD6600B01384 /* ChatUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD11EB7E5EC00A4999F /* ChatUtils.swift */; };
+		39AA2DA21EF0AD6600B01384 /* LightStreamerChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */; };
+		39AA2DA31EF0AD6600B01384 /* TextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD21EB7E5EC00A4999F /* TextEntry.swift */; };
+		39AA2DA41EF0AD6600B01384 /* AblyChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD81EB7E5F800A4999F /* AblyChatRepository.swift */; };
+		39AA2DA51EF0AD6600B01384 /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BBB1EB7E5BB00A4999F /* JsonFileReader.swift */; };
+		39AA2DA61EF0AD6600B01384 /* RabbitMQChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */; };
+		39AA2DA71EF0AD6600B01384 /* TextEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BBC1EB7E5BB00A4999F /* TextEntryCell.swift */; };
+		39AA2DA81EF0AD6600B01384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BB61EB7E5BB00A4999F /* AppDelegate.swift */; };
+		39AA2DA91EF0AD6600B01384 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BBD1EB7E5BB00A4999F /* TextViewController.swift */; };
+		39AA2DAA1EF0AD6600B01384 /* FirebaseChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BD91EB7E5F800A4999F /* FirebaseChatRepository.swift */; };
+		39AA2DAC1EF0AD6600B01384 /* Pods_DemoPubnub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE8073B1220B6353599FC4 /* Pods_DemoPubnub.framework */; };
+		39AA2DAE1EF0AD6600B01384 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BBA1EB7E5BB00A4999F /* Info.plist */; };
+		39AA2DAF1EF0AD6600B01384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BCA1EB7E5D600A4999F /* Main.storyboard */; };
+		39AA2DB01EF0AD6600B01384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BC81EB7E5D600A4999F /* LaunchScreen.storyboard */; };
+		39AA2DB11EF0AD6600B01384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB71EB7E5BB00A4999F /* Assets.xcassets */; };
+		39AA2DB21EF0AD6600B01384 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB91EB7E5BB00A4999F /* GoogleService-Info.plist */; };
 		39D2B7811ED069F50090936D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BBE1EB7E5BB00A4999F /* ViewController.swift */; };
 		39D2B7831ED069F50090936D /* PubnubChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */; };
 		39D2B7841ED069F50090936D /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A3BCF1EB7E5EC00A4999F /* ChatRepository.swift */; };
@@ -108,13 +134,16 @@
 		39D2B7DD1ED080EE0090936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB71EB7E5BB00A4999F /* Assets.xcassets */; };
 		39D2B7DE1ED080EE0090936D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB91EB7E5BB00A4999F /* GoogleService-Info.plist */; };
 		39D2B7E61ED082570090936D /* ChatInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3960F7D01ECBBC8A0044996F /* ChatInjection.swift */; };
+		729A8DAA8C07FD29629D6882 /* Pods_DemoRabbitMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209C12957B7A904826ECDFED /* Pods_DemoRabbitMQ.framework */; };
 		9A3DAEB00923BEEAFF6EF101 /* Pods_DemoPubnub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE8073B1220B6353599FC4 /* Pods_DemoPubnub.framework */; };
 		B2B0B561A00110F08E04E21F /* Pods_ChatDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */; };
 		CCAEB85BD9546EC4C8F0470D /* Pods_ChatDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */; };
 		DBD55BAEC1EDC10AC9E2BDDE /* Pods_DemoFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2875795F08811D2B9AA9033B /* Pods_DemoFirebase.framework */; };
+		DE395019B0432C2D36F71CE9 /* Pods_DemoLightstreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AD70F353F51E1EABC3B6BF /* Pods_DemoLightstreamer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209C12957B7A904826ECDFED /* Pods_DemoRabbitMQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoRabbitMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DE8073B1220B6353599FC4 /* Pods_DemoPubnub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoPubnub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2549A801357315B8BB4E5D62 /* Pods_ChatDemos_Ably.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Ably.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2875795F08811D2B9AA9033B /* Pods_DemoFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,18 +174,24 @@
 		3960F8691ECBBE3C0044996F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatDemos/Targets/Lightstreamer/Info.plist; sourceTree = SOURCE_ROOT; };
 		399A40B41EDA3AD0005E1892 /* DemoLightstreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoLightstreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightStreamerChatRepository.swift; path = ChatDemos/Data/Impl/LightStreamerChatRepository.swift; sourceTree = SOURCE_ROOT; };
+		39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RabbitMQChatRepository.swift; path = ChatDemos/Data/Impl/RabbitMQChatRepository.swift; sourceTree = SOURCE_ROOT; };
+		39AA2DB81EF0AD6600B01384 /* DemoRabbitMQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoRabbitMQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39AA2DB91EF0AD6600B01384 /* DemoLightstreamer copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DemoLightstreamer copy-Info.plist"; path = "/Users/brunoaybar/Documents/Development/Personal/iOS/demo/Communication-Demo-iOS/DemoLightstreamer copy-Info.plist"; sourceTree = "<absolute>"; };
 		39D2B79D1ED069F50090936D /* DemoFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D2B7C11ED07BB80090936D /* DemoAbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D2B7E41ED080EE0090936D /* DemoPubnub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoPubnub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EE25741ED21AE200464860 /* ChatDemos-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ChatDemos-Bridging-Header.h"; path = "ChatDemos/ChatDemos-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		39FD149C1EAC14C2008EBE66 /* ChatDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E571F8FD6BEF30C981D75B4 /* Pods-DemoLightstreamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLightstreamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLightstreamer/Pods-DemoLightstreamer.release.xcconfig"; sourceTree = "<group>"; };
 		3EBEEB0044F615B0FB19ADB5 /* Pods_ChatDemos_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E3277A961A392EA5BA5572 /* Pods-DemoFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoFirebase/Pods-DemoFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		4FC17D995D64E96BC07FB7AC /* Pods-ChatDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatDemos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatDemos/Pods-ChatDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		50DB445FC518B76C074D0ADF /* Pods_Ably.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ably.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5686A3C9C369D4F5A989D5CF /* Pods_ChatDemos_Pubnub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Pubnub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5762BCE92810916D111DE126 /* Pods-DemoAbly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAbly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAbly/Pods-DemoAbly.debug.xcconfig"; sourceTree = "<group>"; };
+		5B03D386F09E05192917EADF /* Pods-DemoRabbitMQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoRabbitMQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoRabbitMQ/Pods-DemoRabbitMQ.debug.xcconfig"; sourceTree = "<group>"; };
 		70D5C5178ED3EE777F50CE33 /* Pods_ChatDemos_Lightstreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos_Lightstreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA945375EAC11DB3B2CE42B /* Pods-DemoRabbitMQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoRabbitMQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoRabbitMQ/Pods-DemoRabbitMQ.release.xcconfig"; sourceTree = "<group>"; };
 		7FF1D1AEAF68E389AA6B5FB2 /* Pods_Pubnub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pubnub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B71273990CD9013473517B /* Pods_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9538784E09B9BE28CD2F910F /* Pods-DemoPubnub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPubnub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoPubnub/Pods-DemoPubnub.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,8 +200,10 @@
 		A0157DE7ACF78E481CAEE63B /* Pods-DemoAbly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAbly.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAbly/Pods-DemoAbly.release.xcconfig"; sourceTree = "<group>"; };
 		B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5D222AB9CD77368ECD87EA /* Pods-DemoFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoFirebase/Pods-DemoFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		C90BE778093D94F145B4A086 /* Pods-DemoLightstreamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLightstreamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLightstreamer/Pods-DemoLightstreamer.debug.xcconfig"; sourceTree = "<group>"; };
 		CC4056955AE63B76D87CA197 /* Pods_Lightstreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lightstreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD08B4E1FB6F27884487EEE7 /* Pods-DemoPubnub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPubnub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoPubnub/Pods-DemoPubnub.debug.xcconfig"; sourceTree = "<group>"; };
+		D3AD70F353F51E1EABC3B6BF /* Pods_DemoLightstreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLightstreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E1C4D6A45003AD88758528 /* Pods-ChatDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatDemos/Pods-ChatDemos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +213,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				399A40A81EDA3AD0005E1892 /* Pods_DemoPubnub.framework in Frameworks */,
+				DE395019B0432C2D36F71CE9 /* Pods_DemoLightstreamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39AA2DAB1EF0AD6600B01384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39AA2DAC1EF0AD6600B01384 /* Pods_DemoPubnub.framework in Frameworks */,
+				729A8DAA8C07FD29629D6882 /* Pods_DemoRabbitMQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +285,7 @@
 				391A3BD91EB7E5F800A4999F /* FirebaseChatRepository.swift */,
 				391A3BDA1EB7E5F800A4999F /* PubnubChatRepository.swift */,
 				39A66B1C1EC79C2B009B24BB /* LightStreamerChatRepository.swift */,
+				39AA2D931EF0A89100B01384 /* RabbitMQChatRepository.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -296,6 +344,7 @@
 				39FD149D1EAC14C2008EBE66 /* Products */,
 				FA5B600D8CD2C0CA451E2766 /* Pods */,
 				B555A0848C3D06092D849B7A /* Frameworks */,
+				39AA2DB91EF0AD6600B01384 /* DemoLightstreamer copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -307,6 +356,7 @@
 				39D2B7C11ED07BB80090936D /* DemoAbly.app */,
 				39D2B7E41ED080EE0090936D /* DemoPubnub.app */,
 				399A40B41EDA3AD0005E1892 /* DemoLightstreamer.app */,
+				39AA2DB81EF0AD6600B01384 /* DemoRabbitMQ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,6 +398,8 @@
 				2875795F08811D2B9AA9033B /* Pods_DemoFirebase.framework */,
 				9E89C8FD9F785451029D09F9 /* Pods_DemoAbly.framework */,
 				24DE8073B1220B6353599FC4 /* Pods_DemoPubnub.framework */,
+				D3AD70F353F51E1EABC3B6BF /* Pods_DemoLightstreamer.framework */,
+				209C12957B7A904826ECDFED /* Pods_DemoRabbitMQ.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -363,6 +415,10 @@
 				A0157DE7ACF78E481CAEE63B /* Pods-DemoAbly.release.xcconfig */,
 				CD08B4E1FB6F27884487EEE7 /* Pods-DemoPubnub.debug.xcconfig */,
 				9538784E09B9BE28CD2F910F /* Pods-DemoPubnub.release.xcconfig */,
+				C90BE778093D94F145B4A086 /* Pods-DemoLightstreamer.debug.xcconfig */,
+				3E571F8FD6BEF30C981D75B4 /* Pods-DemoLightstreamer.release.xcconfig */,
+				5B03D386F09E05192917EADF /* Pods-DemoRabbitMQ.debug.xcconfig */,
+				7AA945375EAC11DB3B2CE42B /* Pods-DemoRabbitMQ.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -388,6 +444,26 @@
 			name = DemoLightstreamer;
 			productName = AbblyDemo;
 			productReference = 399A40B41EDA3AD0005E1892 /* DemoLightstreamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39AA2D991EF0AD6600B01384 /* DemoRabbitMQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39AA2DB51EF0AD6600B01384 /* Build configuration list for PBXNativeTarget "DemoRabbitMQ" */;
+			buildPhases = (
+				39AA2D9A1EF0AD6600B01384 /* [CP] Check Pods Manifest.lock */,
+				39AA2D9B1EF0AD6600B01384 /* Sources */,
+				39AA2DAB1EF0AD6600B01384 /* Frameworks */,
+				39AA2DAD1EF0AD6600B01384 /* Resources */,
+				39AA2DB31EF0AD6600B01384 /* [CP] Embed Pods Frameworks */,
+				39AA2DB41EF0AD6600B01384 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoRabbitMQ;
+			productName = AbblyDemo;
+			productReference = 39AA2DB81EF0AD6600B01384 /* DemoRabbitMQ.app */;
 			productType = "com.apple.product-type.application";
 		};
 		39D2B77E1ED069F50090936D /* DemoFirebase */ = {
@@ -483,6 +559,9 @@
 					399A40961EDA3AD0005E1892 = {
 						DevelopmentTeam = H5SA9D7D87;
 					};
+					39AA2D991EF0AD6600B01384 = {
+						DevelopmentTeam = H5SA9D7D87;
+					};
 					39D2B77E1ED069F50090936D = {
 						DevelopmentTeam = H5SA9D7D87;
 					};
@@ -518,6 +597,7 @@
 				39D2B7A11ED07BB80090936D /* DemoAbly */,
 				39D2B7C41ED080EE0090936D /* DemoPubnub */,
 				399A40961EDA3AD0005E1892 /* DemoLightstreamer */,
+				39AA2D991EF0AD6600B01384 /* DemoRabbitMQ */,
 			);
 		};
 /* End PBXProject section */
@@ -532,6 +612,18 @@
 				399A40AC1EDA3AD0005E1892 /* LaunchScreen.storyboard in Resources */,
 				399A40AD1EDA3AD0005E1892 /* Assets.xcassets in Resources */,
 				399A40AE1EDA3AD0005E1892 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39AA2DAD1EF0AD6600B01384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39AA2DAE1EF0AD6600B01384 /* Info.plist in Resources */,
+				39AA2DAF1EF0AD6600B01384 /* Main.storyboard in Resources */,
+				39AA2DB01EF0AD6600B01384 /* LaunchScreen.storyboard in Resources */,
+				39AA2DB11EF0AD6600B01384 /* Assets.xcassets in Resources */,
+				39AA2DB21EF0AD6600B01384 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +735,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoPubnub/Pods-DemoPubnub-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoLightstreamer/Pods-DemoLightstreamer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		399A40B01EDA3AD0005E1892 /* [CP] Copy Pods Resources */ = {
@@ -658,7 +750,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoPubnub/Pods-DemoPubnub-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoLightstreamer/Pods-DemoLightstreamer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39AA2D9A1EF0AD6600B01384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		39AA2DB31EF0AD6600B01384 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoRabbitMQ/Pods-DemoRabbitMQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39AA2DB41EF0AD6600B01384 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoRabbitMQ/Pods-DemoRabbitMQ-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		39D2B77F1ED069F50090936D /* [CP] Check Pods Manifest.lock */ = {
@@ -828,10 +965,33 @@
 				399A409F1EDA3AD0005E1892 /* TextEntry.swift in Sources */,
 				399A40A01EDA3AD0005E1892 /* AblyChatRepository.swift in Sources */,
 				399A40A11EDA3AD0005E1892 /* JsonFileReader.swift in Sources */,
+				39AA2D981EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */,
 				399A40A21EDA3AD0005E1892 /* TextEntryCell.swift in Sources */,
 				399A40A31EDA3AD0005E1892 /* AppDelegate.swift in Sources */,
 				399A40A51EDA3AD0005E1892 /* TextViewController.swift in Sources */,
 				399A40A61EDA3AD0005E1892 /* FirebaseChatRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39AA2D9B1EF0AD6600B01384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39AA2D9C1EF0AD6600B01384 /* ViewController.swift in Sources */,
+				39AA2D9D1EF0AD6600B01384 /* PubnubChatRepository.swift in Sources */,
+				39AA2D9E1EF0AD6600B01384 /* ChatRepository.swift in Sources */,
+				39AA2D9F1EF0AD6600B01384 /* ChatRepositoryFactory.swift in Sources */,
+				39AA2DA01EF0AD6600B01384 /* ChatInjection.swift in Sources */,
+				39AA2DA11EF0AD6600B01384 /* ChatUtils.swift in Sources */,
+				39AA2DA21EF0AD6600B01384 /* LightStreamerChatRepository.swift in Sources */,
+				39AA2DA31EF0AD6600B01384 /* TextEntry.swift in Sources */,
+				39AA2DA41EF0AD6600B01384 /* AblyChatRepository.swift in Sources */,
+				39AA2DA51EF0AD6600B01384 /* JsonFileReader.swift in Sources */,
+				39AA2DA61EF0AD6600B01384 /* RabbitMQChatRepository.swift in Sources */,
+				39AA2DA71EF0AD6600B01384 /* TextEntryCell.swift in Sources */,
+				39AA2DA81EF0AD6600B01384 /* AppDelegate.swift in Sources */,
+				39AA2DA91EF0AD6600B01384 /* TextViewController.swift in Sources */,
+				39AA2DAA1EF0AD6600B01384 /* FirebaseChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +1009,7 @@
 				39D2B7881ED069F50090936D /* TextEntry.swift in Sources */,
 				39D2B7891ED069F50090936D /* AblyChatRepository.swift in Sources */,
 				39D2B78A1ED069F50090936D /* JsonFileReader.swift in Sources */,
+				39AA2D951EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */,
 				39D2B78B1ED069F50090936D /* TextEntryCell.swift in Sources */,
 				39D2B78C1ED069F50090936D /* AppDelegate.swift in Sources */,
 				39D2B78D1ED069F50090936D /* TextViewController.swift in Sources */,
@@ -870,6 +1031,7 @@
 				39D2B7AB1ED07BB80090936D /* TextEntry.swift in Sources */,
 				39D2B7AC1ED07BB80090936D /* AblyChatRepository.swift in Sources */,
 				39D2B7AD1ED07BB80090936D /* JsonFileReader.swift in Sources */,
+				39AA2D961EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */,
 				39D2B7AE1ED07BB80090936D /* TextEntryCell.swift in Sources */,
 				39D2B7AF1ED07BB80090936D /* AppDelegate.swift in Sources */,
 				39D2B7B01ED07BB80090936D /* TextViewController.swift in Sources */,
@@ -891,6 +1053,7 @@
 				39D2B7CF1ED080EE0090936D /* AblyChatRepository.swift in Sources */,
 				39D2B7D01ED080EE0090936D /* JsonFileReader.swift in Sources */,
 				39D2B7D11ED080EE0090936D /* TextEntryCell.swift in Sources */,
+				39AA2D971EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */,
 				39D2B7D21ED080EE0090936D /* AppDelegate.swift in Sources */,
 				39D2B7E61ED082570090936D /* ChatInjection.swift in Sources */,
 				39D2B7D31ED080EE0090936D /* TextViewController.swift in Sources */,
@@ -912,6 +1075,7 @@
 				391A3BDB1EB7E5F800A4999F /* AblyChatRepository.swift in Sources */,
 				391A3BC41EB7E5BB00A4999F /* JsonFileReader.swift in Sources */,
 				391A3BC51EB7E5BB00A4999F /* TextEntryCell.swift in Sources */,
+				39AA2D941EF0A89100B01384 /* RabbitMQChatRepository.swift in Sources */,
 				391A3BBF1EB7E5BB00A4999F /* AppDelegate.swift in Sources */,
 				39D2B7A01ED071060090936D /* ChatInjection.swift in Sources */,
 				391A3BC61EB7E5BB00A4999F /* TextViewController.swift in Sources */,
@@ -943,7 +1107,7 @@
 /* Begin XCBuildConfiguration section */
 		399A40B21EDA3AD0005E1892 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD08B4E1FB6F27884487EEE7 /* Pods-DemoPubnub.debug.xcconfig */;
+			baseConfigurationReference = C90BE778093D94F145B4A086 /* Pods-DemoLightstreamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = LightstreamerIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -960,7 +1124,7 @@
 		};
 		399A40B31EDA3AD0005E1892 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9538784E09B9BE28CD2F910F /* Pods-DemoPubnub.release.xcconfig */;
+			baseConfigurationReference = 3E571F8FD6BEF30C981D75B4 /* Pods-DemoLightstreamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = LightstreamerIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -968,6 +1132,39 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ChatDemos/Targets/Lightstreamer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.lightstreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatDemos/ChatDemos-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		39AA2DB61EF0AD6600B01384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B03D386F09E05192917EADF /* Pods-DemoRabbitMQ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = LightstreamerIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H5SA9D7D87;
+				INFOPLIST_FILE = "DemoLightstreamer copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.rabbitmq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatDemos/ChatDemos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		39AA2DB71EF0AD6600B01384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA945375EAC11DB3B2CE42B /* Pods-DemoRabbitMQ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = LightstreamerIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H5SA9D7D87;
+				INFOPLIST_FILE = "DemoLightstreamer copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.rabbitmq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChatDemos/ChatDemos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1209,6 +1406,15 @@
 			buildConfigurations = (
 				399A40B21EDA3AD0005E1892 /* Debug */,
 				399A40B31EDA3AD0005E1892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39AA2DB51EF0AD6600B01384 /* Build configuration list for PBXNativeTarget "DemoRabbitMQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39AA2DB61EF0AD6600B01384 /* Debug */,
+				39AA2DB71EF0AD6600B01384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
