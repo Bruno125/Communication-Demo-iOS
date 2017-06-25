@@ -12,22 +12,34 @@ import RMQClient
 
 class RabbitMQChatRepository : ChatRepository{
 
-    private let URI = "amqp://mobile:1234@10.11.80.78:5673"
+    private let URI = "amqp://mobile:1234@10.11.80.94:5673"
     private let USERNAME = "mobile"
     private let PASS = "1234"
     
-    let channel: RMQChannel
+    let conn : RMQConnection
     
     init() {
-        publishToAMQP()
-        
+        conn = RMQConnection(uri: URI, delegate: RMQConnectionDelegateLogger())
+        conn.start()
+        subscribe()
     }
     
-    let queue = Queue<String>()
     func send(message: String){
-        // Send the message (executes in background)
-        let x = channel.fanout("chats")
-        x.publish(ChatUtils.createData(for: message).data(using: .utf8))
+        
+        DispatchQueue.global(qos: .background).async {
+            let ch = self.conn.createChannel()
+            
+            ch.exchangeDeclare("chat", type: "fanout")
+        
+            
+            if let data = ChatUtils.createData(for: message).data(using: .utf8){
+                ch.basicPublish(data,
+                                routingKey: "",
+                                exchange: "chat",
+                                properties: [] )
+                ch.blockingWait(on: type(of: self))
+            }
+        }
     }
     
     var messagesSubject = PublishSubject<TextEntry>()
@@ -35,30 +47,36 @@ class RabbitMQChatRepository : ChatRepository{
         return messagesSubject.asObservable()
     }
     
-    private func publishToAMQP(){
+    private func subscribe(){
+        
         DispatchQueue.global(qos: .background).async {
-            while(true){
-                let connection = self.createConnection()
-                let ch = connection.createChannel()
-                ch.confirmSelect()
-                
-                while(true){
-                    if let message = queue.front{
-                        ch.
-                    }
+            
+            let ch = self.conn.createChannel()
+            
+            ch.exchangeDeclare("chat", type: "fanout")
+            
+            let name = ch.queue("").name!
+            ch.queueBind(name, exchange: "chat", routingKey: "")
+            
+            let consumer = RMQConsumer(channel: ch, queueName: name, options: .exclusive)
+            consumer?.onDelivery({ (message) in
+                if let content = String(data: message.body, encoding: .utf8){
+                    print("Received \(content))")
                     
+                    DispatchQueue.main.async {
+                        if let entry = ChatUtils.from(data: content) {
+                            self.messagesSubject.onNext(entry)
+                        }
+                    }
                 }
-                
-            }
+            })
             
+            ch.basicConsume(consumer!)
             
-            
-            
-            DispatchQueue.main.async {
-                print("This is run on the main queue, after the previous code in outer block")
-            }
         }
+        
     }
+    
     
     
     private func createConnection() -> RMQConnection{
@@ -66,32 +84,4 @@ class RabbitMQChatRepository : ChatRepository{
         
     }
     
-}
-
-public struct Queue<T> {
-    fileprivate var array = [T]()
-    
-    public var isEmpty: Bool {
-        return array.isEmpty
-    }
-    
-    public var count: Int {
-        return array.count
-    }
-    
-    public mutating func enqueue(_ element: T) {
-        array.append(element)
-    }
-    
-    public mutating func dequeue() -> T? {
-        if isEmpty {
-            return nil
-        } else {
-            return array.removeFirst()
-        }
-    }
-    
-    public var front: T? {
-        return array.first
-    }
 }

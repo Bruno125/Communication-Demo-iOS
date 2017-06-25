@@ -21,6 +21,8 @@ class ChatRepositoryFactory{
             return PubnubChatRepository()
         case .lightstreamer:
             return LightStreamerChatRepository()
+        case .rabbitmq:
+            return RabbitMQChatRepository()
         default:
             return AblyChatRepository()
         }
@@ -35,4 +37,5 @@ enum ChatType {
     case ably
     case pubnub
     case lightstreamer
+    case rabbitmq
 }
