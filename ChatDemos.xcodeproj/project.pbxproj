@@ -571,16 +571,17 @@
 						DevelopmentTeam = H5SA9D7D87;
 					};
 					39AA2D991EF0AD6600B01384 = {
-						DevelopmentTeam = H5SA9D7D87;
+						DevelopmentTeam = 69SG68S3P9;
 					};
 					39D2B77E1ED069F50090936D = {
 						DevelopmentTeam = H5SA9D7D87;
 					};
 					39D2B7A11ED07BB80090936D = {
-						DevelopmentTeam = VK59D6Z27Q;
+						DevelopmentTeam = H5SA9D7D87;
+						ProvisioningStyle = Automatic;
 					};
 					39D2B7C41ED080EE0090936D = {
-						DevelopmentTeam = VK59D6Z27Q;
+						DevelopmentTeam = H5SA9D7D87;
 					};
 					39FD149B1EAC14C2008EBE66 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -1154,10 +1155,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B03D386F09E05192917EADF /* Pods-DemoRabbitMQ.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = LightstreamerIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = RabbitMQ;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = H5SA9D7D87;
+				DEVELOPMENT_TEAM = 69SG68S3P9;
 				INFOPLIST_FILE = "DemoLightstreamer copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.rabbitmq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1171,10 +1173,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AA945375EAC11DB3B2CE42B /* Pods-DemoRabbitMQ.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = LightstreamerIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = RabbitMQ;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = H5SA9D7D87;
+				DEVELOPMENT_TEAM = 69SG68S3P9;
 				INFOPLIST_FILE = "DemoLightstreamer copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.rabbitmq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1191,6 +1194,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H5SA9D7D87;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatDemos/Targets/Firebase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1208,6 +1212,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H5SA9D7D87;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatDemos/Targets/Firebase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1222,11 +1227,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AblyIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VK59D6Z27Q;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H5SA9D7D87;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatDemos/Targets/Ably/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.ably;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChatDemos/ChatDemos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1239,11 +1249,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AblyIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VK59D6Z27Q;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H5SA9D7D87;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatDemos/Targets/Ably/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.ably;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChatDemos/ChatDemos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1255,7 +1269,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = PubnubIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VK59D6Z27Q;
+				DEVELOPMENT_TEAM = H5SA9D7D87;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatDemos/Targets/Pubnub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.pubnub;
@@ -1272,7 +1286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = PubnubIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VK59D6Z27Q;
+				DEVELOPMENT_TEAM = H5SA9D7D87;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatDemos/Targets/Pubnub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunoaybar.chatdemos.pubnub;

@@ -26,6 +26,7 @@ class LightStreamerChatRepository: NSObject, ChatRepository{
     var _subscription : LSSubscription!
     var messagesSubject = PublishSubject<TextEntry>()
 
+    func name() -> String { return "LightStreamer Chat" }
     required override init() {
         
         super.init()
@@ -57,6 +58,10 @@ class LightStreamerChatRepository: NSObject, ChatRepository{
     
     func receive() -> Observable<TextEntry>{
         return messagesSubject.asObservable()
+    }
+    
+    func color() -> String {
+        return "#689968"
     }
     
 }

@@ -16,6 +16,7 @@ class FirebaseChatRepository : ChatRepository{
     private var messagesSubject = PublishSubject<TextEntry>()
     private var ref : FIRDatabaseReference!
     
+    func name() -> String { return "Firebase Chat" }
     init() {
         FIRApp.configure()
         ref = FIRDatabase.database().reference()
@@ -39,6 +40,8 @@ class FirebaseChatRepository : ChatRepository{
         return messagesSubject.asObservable()
     }
     
-    
+    func color() -> String {
+        return "#ffc929"
+    }
     
 }

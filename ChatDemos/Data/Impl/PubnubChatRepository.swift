@@ -16,6 +16,7 @@ class PubnubChatRepository : NSObject,ChatRepository,PNObjectEventListener{
     var client: PubNub?
     private var messagesSubject = PublishSubject<TextEntry>()
     
+    func name() -> String { return "Pubnub Chat" }
     override init() {
         super.init()
         
@@ -55,6 +56,10 @@ class PubnubChatRepository : NSObject,ChatRepository,PNObjectEventListener{
         if entry != nil{
             messagesSubject.onNext(entry!)
         }
+    }
+    
+    func color() -> String {
+        return "#cf2127"
     }
     
 }

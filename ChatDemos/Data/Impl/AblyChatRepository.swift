@@ -18,6 +18,7 @@ class AblyChatRepository : ChatRepository{
     var channel : ARTRealtimeChannel?
     private var messagesSubject = PublishSubject<TextEntry>()
     
+    func name() -> String { return "Ably Chat" }
     init() {
         
         client.connection.on { state in }
@@ -44,6 +45,8 @@ class AblyChatRepository : ChatRepository{
         return messagesSubject.asObservable()
     }
     
-    
+    func color() -> String {
+        return "#f79e20"
+    }
     
 }

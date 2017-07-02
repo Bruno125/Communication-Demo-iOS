@@ -12,16 +12,20 @@ import RMQClient
 
 class RabbitMQChatRepository : ChatRepository{
 
-    private let URI = "amqp://mobile:1234@10.11.80.94:5673"
+    private let URI = "amqp://mobile:1234@10.11.80.80:5673"
     private let USERNAME = "mobile"
     private let PASS = "1234"
     
     let conn : RMQConnection
     
+    func name() -> String { return "RabbitMQ Chat" }
     init() {
         conn = RMQConnection(uri: URI, delegate: RMQConnectionDelegateLogger())
         conn.start()
         subscribe()
+    }
+    func color() -> String {
+        return "#ff6600"
     }
     
     func send(message: String){

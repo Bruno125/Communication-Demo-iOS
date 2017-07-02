@@ -10,9 +10,9 @@ import Foundation
 import RxSwift
 
 protocol ChatRepository{
-    
+    func name() -> String
     func send(message: String)
     func receive() -> Observable<TextEntry>
-    
+    func color() -> String
     
 }
