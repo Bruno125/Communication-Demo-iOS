@@ -47,7 +47,14 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Title" id="BJh-Ly-8kd"/>
+                                    <navigationItem title="Title" id="BJh-Ly-8kd">
+                                        <barButtonItem key="rightBarButtonItem" image="ic_network" id="4az-6r-HV5">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="actionNetworkType:" destination="1X3-YG-A2R" id="HdK-Ze-iKC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3jR-82-zZb">
@@ -183,4 +190,7 @@
             <point key="canvasLocation" x="957.60000000000002" y="160.56971514242881"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_network" width="24" height="24"/>
+    </resources>
 </document>

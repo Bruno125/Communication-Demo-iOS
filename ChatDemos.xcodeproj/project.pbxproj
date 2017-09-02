@@ -134,6 +134,18 @@
 		39D2B7DE1ED080EE0090936D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 391A3BB91EB7E5BB00A4999F /* GoogleService-Info.plist */; };
 		39D2B7E61ED082570090936D /* ChatInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3960F7D01ECBBC8A0044996F /* ChatInjection.swift */; };
 		729A8DAA8C07FD29629D6882 /* Pods_DemoRabbitMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209C12957B7A904826ECDFED /* Pods_DemoRabbitMQ.framework */; };
+		922AE07D1F5B1660000F3104 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */; };
+		922AE07E1F5B166D000F3104 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */; };
+		922AE07F1F5B1675000F3104 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */; };
+		922AE0801F5B1680000F3104 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */; };
+		92784AEC1F5B153100BBEA0D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92784AEB1F5B153100BBEA0D /* Reachability.swift */; };
+		92784AED1F5B153100BBEA0D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92784AEB1F5B153100BBEA0D /* Reachability.swift */; };
+		92784AEE1F5B153100BBEA0D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92784AEB1F5B153100BBEA0D /* Reachability.swift */; };
+		92784AEF1F5B153100BBEA0D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92784AEB1F5B153100BBEA0D /* Reachability.swift */; };
+		92784AF01F5B153100BBEA0D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92784AEB1F5B153100BBEA0D /* Reachability.swift */; };
+		92784AF11F5B153100BBEA0D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92784AEB1F5B153100BBEA0D /* Reachability.swift */; };
+		92784AF21F5B158900BBEA0D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */; };
+		92784AF31F5B163B00BBEA0D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */; };
 		92F30FCF1EFF288C0032BE01 /* ChatInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F30FCD1EFF288C0032BE01 /* ChatInjection.swift */; };
 		92F30FD01EFF288C0032BE01 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F30FCE1EFF288C0032BE01 /* Info.plist */; };
 		9A3DAEB00923BEEAFF6EF101 /* Pods_DemoPubnub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE8073B1220B6353599FC4 /* Pods_DemoPubnub.framework */; };
@@ -194,6 +206,8 @@
 		7AA945375EAC11DB3B2CE42B /* Pods-DemoRabbitMQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoRabbitMQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoRabbitMQ/Pods-DemoRabbitMQ.release.xcconfig"; sourceTree = "<group>"; };
 		7FF1D1AEAF68E389AA6B5FB2 /* Pods_Pubnub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pubnub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B71273990CD9013473517B /* Pods_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		92784AEB1F5B153100BBEA0D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = ChatDemos/Reachability.swift; sourceTree = SOURCE_ROOT; };
 		92F30FCD1EFF288C0032BE01 /* ChatInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatInjection.swift; path = ChatDemos/Targets/RabbitMQ/ChatInjection.swift; sourceTree = SOURCE_ROOT; };
 		92F30FCE1EFF288C0032BE01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatDemos/Targets/RabbitMQ/Info.plist; sourceTree = SOURCE_ROOT; };
 		9538784E09B9BE28CD2F910F /* Pods-DemoPubnub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPubnub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoPubnub/Pods-DemoPubnub.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922AE07F1F5B1675000F3104 /* CoreTelephony.framework in Frameworks */,
 				399A40A81EDA3AD0005E1892 /* Pods_DemoPubnub.framework in Frameworks */,
 				DE395019B0432C2D36F71CE9 /* Pods_DemoLightstreamer.framework in Frameworks */,
 			);
@@ -223,6 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922AE0801F5B1680000F3104 /* CoreTelephony.framework in Frameworks */,
 				39AA2DAC1EF0AD6600B01384 /* Pods_DemoPubnub.framework in Frameworks */,
 				729A8DAA8C07FD29629D6882 /* Pods_DemoRabbitMQ.framework in Frameworks */,
 			);
@@ -232,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922AE07D1F5B1660000F3104 /* CoreTelephony.framework in Frameworks */,
 				39D2B7901ED069F50090936D /* Pods_ChatDemos.framework in Frameworks */,
 				39D2B7911ED069F50090936D /* Pods_ChatDemos.framework in Frameworks */,
 				DBD55BAEC1EDC10AC9E2BDDE /* Pods_DemoFirebase.framework in Frameworks */,
@@ -243,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92784AF21F5B158900BBEA0D /* CoreTelephony.framework in Frameworks */,
 				01F83DEF66BC39F46DC78316 /* Pods_DemoAbly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +269,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922AE07E1F5B166D000F3104 /* CoreTelephony.framework in Frameworks */,
 				9A3DAEB00923BEEAFF6EF101 /* Pods_DemoPubnub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92784AF31F5B163B00BBEA0D /* CoreTelephony.framework in Frameworks */,
 				CCAEB85BD9546EC4C8F0470D /* Pods_ChatDemos.framework in Frameworks */,
 				256219CBCE51225AE8D3F392 /* Pods_ChatDemos.framework in Frameworks */,
 				B2B0B561A00110F08E04E21F /* Pods_ChatDemos.framework in Frameworks */,
@@ -379,6 +399,7 @@
 				391A3BBC1EB7E5BB00A4999F /* TextEntryCell.swift */,
 				391A3BBD1EB7E5BB00A4999F /* TextViewController.swift */,
 				391A3BBE1EB7E5BB00A4999F /* ViewController.swift */,
+				92784AEB1F5B153100BBEA0D /* Reachability.swift */,
 			);
 			name = ChatDemos;
 			path = AbblyDemo;
@@ -396,6 +417,7 @@
 		B555A0848C3D06092D849B7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */,
 				9F834249794F07AC7C00DAB7 /* Pods_AbblyDemo.framework */,
 				B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */,
 				2549A801357315B8BB4E5D62 /* Pods_ChatDemos_Ably.framework */,
@@ -982,6 +1004,7 @@
 				399A40A21EDA3AD0005E1892 /* TextEntryCell.swift in Sources */,
 				399A40A31EDA3AD0005E1892 /* AppDelegate.swift in Sources */,
 				399A40A51EDA3AD0005E1892 /* TextViewController.swift in Sources */,
+				92784AF01F5B153100BBEA0D /* Reachability.swift in Sources */,
 				399A40A61EDA3AD0005E1892 /* FirebaseChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1004,6 +1027,7 @@
 				39AA2DA71EF0AD6600B01384 /* TextEntryCell.swift in Sources */,
 				39AA2DA81EF0AD6600B01384 /* AppDelegate.swift in Sources */,
 				39AA2DA91EF0AD6600B01384 /* TextViewController.swift in Sources */,
+				92784AF11F5B153100BBEA0D /* Reachability.swift in Sources */,
 				39AA2DAA1EF0AD6600B01384 /* FirebaseChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1026,6 +1050,7 @@
 				39D2B78B1ED069F50090936D /* TextEntryCell.swift in Sources */,
 				39D2B78C1ED069F50090936D /* AppDelegate.swift in Sources */,
 				39D2B78D1ED069F50090936D /* TextViewController.swift in Sources */,
+				92784AED1F5B153100BBEA0D /* Reachability.swift in Sources */,
 				39D2B78E1ED069F50090936D /* FirebaseChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1048,6 +1073,7 @@
 				39D2B7AE1ED07BB80090936D /* TextEntryCell.swift in Sources */,
 				39D2B7AF1ED07BB80090936D /* AppDelegate.swift in Sources */,
 				39D2B7B01ED07BB80090936D /* TextViewController.swift in Sources */,
+				92784AEE1F5B153100BBEA0D /* Reachability.swift in Sources */,
 				39D2B7B11ED07BB80090936D /* FirebaseChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1070,6 +1096,7 @@
 				39D2B7D21ED080EE0090936D /* AppDelegate.swift in Sources */,
 				39D2B7E61ED082570090936D /* ChatInjection.swift in Sources */,
 				39D2B7D31ED080EE0090936D /* TextViewController.swift in Sources */,
+				92784AEF1F5B153100BBEA0D /* Reachability.swift in Sources */,
 				39D2B7D41ED080EE0090936D /* FirebaseChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1092,6 +1119,7 @@
 				391A3BBF1EB7E5BB00A4999F /* AppDelegate.swift in Sources */,
 				39D2B7A01ED071060090936D /* ChatInjection.swift in Sources */,
 				391A3BC61EB7E5BB00A4999F /* TextViewController.swift in Sources */,
+				92784AEC1F5B153100BBEA0D /* Reachability.swift in Sources */,
 				391A3BDC1EB7E5F800A4999F /* FirebaseChatRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

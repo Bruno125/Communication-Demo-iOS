@@ -9,7 +9,7 @@
 import UIKit
 import Ably
 import RxSwift
-
+import CoreTelephony
 
 class TextViewController : UIViewController {
     
@@ -68,6 +68,9 @@ class TextViewController : UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func actionNetworkType(_ sender: Any) {
+        showNetworkType()
+    }
 }
 
 extension TextViewController : UITableViewDelegate, UITableViewDataSource{
@@ -154,6 +157,68 @@ extension TextViewController : UITextFieldDelegate{
             self.view.layoutIfNeeded()
             
         }
+        
+    }
+    
+}
+
+extension TextViewController{
+    
+    func showNetworkType(){
+        let alert = UIAlertController(title: "Network Type",
+                                      message: getNetworkType(),
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+        
+        show(alert, sender: self)
+    }
+    
+    func getNetworkType()->String {
+        do{
+            guard let reachability = Reachability.init() else {
+                return "Unknown"
+            }
+            do{
+                try reachability.startNotifier()
+                let status = reachability.currentReachabilityStatus
+                if(status == .notReachable){
+                    return ""
+                }else if (status == .reachableViaWiFi){
+                    return "Wifi"
+                }else if (status == .reachableViaWWAN){
+                    let networkInfo = CTTelephonyNetworkInfo()
+                    let carrierType = networkInfo.currentRadioAccessTechnology
+                    switch carrierType{
+                    case CTRadioAccessTechnologyGPRS?,
+                         CTRadioAccessTechnologyEdge?,
+                         CTRadioAccessTechnologyCDMA1x?: return "2G"
+                        
+                    case CTRadioAccessTechnologyWCDMA?,
+                         CTRadioAccessTechnologyHSDPA?,
+                         CTRadioAccessTechnologyHSUPA?,
+                         CTRadioAccessTechnologyCDMAEVDORev0?,
+                         CTRadioAccessTechnologyCDMAEVDORevA?,
+                         CTRadioAccessTechnologyCDMAEVDORevB?,
+                         CTRadioAccessTechnologyeHRPD?: return "3G"
+                        
+                    case CTRadioAccessTechnologyLTE?: return "4G"
+                        
+                    default: return "Unknow"
+                    }
+                    
+                    
+                }else{
+                    return "Unknow"
+                }
+            }catch{
+                return "Unknow"
+            }
+            
+        }catch{
+            return "Unknow"
+        }
+        
         
     }
     
