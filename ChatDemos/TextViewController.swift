@@ -175,10 +175,10 @@ extension TextViewController{
                                       preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Receptor", style: .default, handler: { _ in
-            self.open(viewControllerId: "SenderViewController")
+            self.open(viewControllerId: "ReceiverViewController")
         }))
         alert.addAction(UIAlertAction(title: "Emisor", style: .default, handler: { _ in
-            self.open(viewControllerId: "ReceiverViewController")
+            self.open(viewControllerId: "SenderViewController")
         }))
         
         alert.addAction(UIAlertAction(title: "Cerrar", style: .default, handler: nil))

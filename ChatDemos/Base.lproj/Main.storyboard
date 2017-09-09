@@ -212,9 +212,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-b8-b2I">
-                                <rect key="frame" x="166" y="75" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-b8-b2I">
+                                <rect key="frame" x="166" y="84" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -223,11 +222,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="urg-xZ-ES2" firstAttribute="top" secondItem="tmo-jA-lmX" secondAttribute="top" id="0J9-kJ-6Qc"/>
+                            <constraint firstItem="dNe-b8-b2I" firstAttribute="centerX" secondItem="tmo-jA-lmX" secondAttribute="centerX" id="OSK-IU-Tfl"/>
                             <constraint firstItem="urg-xZ-ES2" firstAttribute="leading" secondItem="tmo-jA-lmX" secondAttribute="leading" id="S5V-kn-cPl"/>
+                            <constraint firstItem="dNe-b8-b2I" firstAttribute="top" secondItem="urg-xZ-ES2" secondAttribute="bottom" constant="20" id="W5m-AC-7qO"/>
                             <constraint firstAttribute="trailing" secondItem="urg-xZ-ES2" secondAttribute="trailing" id="kKZ-mP-tiz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="counterLabel" destination="dNe-b8-b2I" id="ob2-PN-fvo"/>
                         <outlet property="navigationBar" destination="urg-xZ-ES2" id="N3O-6Q-w69"/>
                     </connections>
                 </viewController>
