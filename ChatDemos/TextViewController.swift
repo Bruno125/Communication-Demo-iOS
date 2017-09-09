@@ -71,6 +71,10 @@ class TextViewController : UIViewController {
     @IBAction func actionNetworkType(_ sender: Any) {
         showNetworkType()
     }
+    
+    @IBAction func actionTestMode(_ sender: Any) {
+        showTestModeOptions()
+    }
 }
 
 extension TextViewController : UITableViewDelegate, UITableViewDataSource{
@@ -164,12 +168,45 @@ extension TextViewController : UITextFieldDelegate{
 
 extension TextViewController{
     
+    func showTestModeOptions(){
+        
+        let alert = UIAlertController(title: "Modos de prueba",
+                                      message: "",
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Receptor", style: .default, handler: { _ in
+            self.open(viewControllerId: "SenderViewController")
+        }))
+        alert.addAction(UIAlertAction(title: "Emisor", style: .default, handler: { _ in
+            self.open(viewControllerId: "ReceiverViewController")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cerrar", style: .default, handler: nil))
+        
+        
+        show(alert, sender: self)
+        
+        
+    }
+    
+    func open(viewControllerId: String){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: viewControllerId) else {
+            return
+        }
+        show(vc, sender: self)
+    }
+    
+    
+}
+
+extension TextViewController{
+    
     func showNetworkType(){
         let alert = UIAlertController(title: "Network Type",
                                       message: getNetworkType(),
                                       preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cerrar", style: .default, handler: nil))
         
         show(alert, sender: self)
     }

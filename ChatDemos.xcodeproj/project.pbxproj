@@ -148,6 +148,18 @@
 		92784AF31F5B163B00BBEA0D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92784ADF1F5B120E00BBEA0D /* CoreTelephony.framework */; };
 		92F30FCF1EFF288C0032BE01 /* ChatInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F30FCD1EFF288C0032BE01 /* ChatInjection.swift */; };
 		92F30FD01EFF288C0032BE01 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F30FCE1EFF288C0032BE01 /* Info.plist */; };
+		92F3D5191F64528300A0D9FA /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */; };
+		92F3D51A1F64528300A0D9FA /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */; };
+		92F3D51B1F64528300A0D9FA /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */; };
+		92F3D51C1F64528300A0D9FA /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */; };
+		92F3D51D1F64528300A0D9FA /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */; };
+		92F3D51E1F64528300A0D9FA /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */; };
+		92F3D5201F64529C00A0D9FA /* SenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */; };
+		92F3D5211F64529C00A0D9FA /* SenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */; };
+		92F3D5221F64529C00A0D9FA /* SenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */; };
+		92F3D5231F64529C00A0D9FA /* SenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */; };
+		92F3D5241F64529C00A0D9FA /* SenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */; };
+		92F3D5251F64529C00A0D9FA /* SenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */; };
 		9A3DAEB00923BEEAFF6EF101 /* Pods_DemoPubnub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE8073B1220B6353599FC4 /* Pods_DemoPubnub.framework */; };
 		B2B0B561A00110F08E04E21F /* Pods_ChatDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */; };
 		CCAEB85BD9546EC4C8F0470D /* Pods_ChatDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767034A223EA47D70F9408B /* Pods_ChatDemos.framework */; };
@@ -210,6 +222,8 @@
 		92784AEB1F5B153100BBEA0D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = ChatDemos/Reachability.swift; sourceTree = SOURCE_ROOT; };
 		92F30FCD1EFF288C0032BE01 /* ChatInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatInjection.swift; path = ChatDemos/Targets/RabbitMQ/ChatInjection.swift; sourceTree = SOURCE_ROOT; };
 		92F30FCE1EFF288C0032BE01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatDemos/Targets/RabbitMQ/Info.plist; sourceTree = SOURCE_ROOT; };
+		92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiverViewController.swift; path = ChatDemos/ReceiverViewController.swift; sourceTree = SOURCE_ROOT; };
+		92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SenderViewController.swift; path = ChatDemos/SenderViewController.swift; sourceTree = SOURCE_ROOT; };
 		9538784E09B9BE28CD2F910F /* Pods-DemoPubnub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoPubnub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoPubnub/Pods-DemoPubnub.release.xcconfig"; sourceTree = "<group>"; };
 		9E89C8FD9F785451029D09F9 /* Pods_DemoAbly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAbly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F834249794F07AC7C00DAB7 /* Pods_AbblyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbblyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +414,8 @@
 				391A3BBD1EB7E5BB00A4999F /* TextViewController.swift */,
 				391A3BBE1EB7E5BB00A4999F /* ViewController.swift */,
 				92784AEB1F5B153100BBEA0D /* Reachability.swift */,
+				92F3D5181F64528300A0D9FA /* ReceiverViewController.swift */,
+				92F3D51F1F64529C00A0D9FA /* SenderViewController.swift */,
 			);
 			name = ChatDemos;
 			path = AbblyDemo;
@@ -991,9 +1007,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				399A40991EDA3AD0005E1892 /* ViewController.swift in Sources */,
+				92F3D5241F64529C00A0D9FA /* SenderViewController.swift in Sources */,
 				399A409A1EDA3AD0005E1892 /* PubnubChatRepository.swift in Sources */,
 				399A409B1EDA3AD0005E1892 /* ChatRepository.swift in Sources */,
 				399A409C1EDA3AD0005E1892 /* ChatRepositoryFactory.swift in Sources */,
+				92F3D51D1F64528300A0D9FA /* ReceiverViewController.swift in Sources */,
 				399A40B61EDA3BAB005E1892 /* ChatInjection.swift in Sources */,
 				399A409D1EDA3AD0005E1892 /* ChatUtils.swift in Sources */,
 				399A409E1EDA3AD0005E1892 /* LightStreamerChatRepository.swift in Sources */,
@@ -1014,9 +1032,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AA2D9C1EF0AD6600B01384 /* ViewController.swift in Sources */,
+				92F3D5251F64529C00A0D9FA /* SenderViewController.swift in Sources */,
 				92F30FCF1EFF288C0032BE01 /* ChatInjection.swift in Sources */,
 				39AA2D9D1EF0AD6600B01384 /* PubnubChatRepository.swift in Sources */,
 				39AA2D9E1EF0AD6600B01384 /* ChatRepository.swift in Sources */,
+				92F3D51E1F64528300A0D9FA /* ReceiverViewController.swift in Sources */,
 				39AA2D9F1EF0AD6600B01384 /* ChatRepositoryFactory.swift in Sources */,
 				39AA2DA11EF0AD6600B01384 /* ChatUtils.swift in Sources */,
 				39AA2DA21EF0AD6600B01384 /* LightStreamerChatRepository.swift in Sources */,
@@ -1037,9 +1057,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D2B7811ED069F50090936D /* ViewController.swift in Sources */,
+				92F3D5211F64529C00A0D9FA /* SenderViewController.swift in Sources */,
 				39D2B7831ED069F50090936D /* PubnubChatRepository.swift in Sources */,
 				39D2B7841ED069F50090936D /* ChatRepository.swift in Sources */,
 				39D2B79F1ED070EF0090936D /* ChatInjection.swift in Sources */,
+				92F3D51A1F64528300A0D9FA /* ReceiverViewController.swift in Sources */,
 				39D2B7851ED069F50090936D /* ChatRepositoryFactory.swift in Sources */,
 				39D2B7861ED069F50090936D /* ChatUtils.swift in Sources */,
 				39D2B7871ED069F50090936D /* LightStreamerChatRepository.swift in Sources */,
@@ -1060,9 +1082,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D2B7A41ED07BB80090936D /* ViewController.swift in Sources */,
+				92F3D5221F64529C00A0D9FA /* SenderViewController.swift in Sources */,
 				39D2B7A51ED07BB80090936D /* PubnubChatRepository.swift in Sources */,
 				39D2B7A61ED07BB80090936D /* ChatRepository.swift in Sources */,
 				39D2B7C31ED07BDD0090936D /* ChatInjection.swift in Sources */,
+				92F3D51B1F64528300A0D9FA /* ReceiverViewController.swift in Sources */,
 				39D2B7A81ED07BB80090936D /* ChatRepositoryFactory.swift in Sources */,
 				39D2B7A91ED07BB80090936D /* ChatUtils.swift in Sources */,
 				39D2B7AA1ED07BB80090936D /* LightStreamerChatRepository.swift in Sources */,
@@ -1083,9 +1107,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D2B7C71ED080EE0090936D /* ViewController.swift in Sources */,
+				92F3D5231F64529C00A0D9FA /* SenderViewController.swift in Sources */,
 				39D2B7C81ED080EE0090936D /* PubnubChatRepository.swift in Sources */,
 				39D2B7C91ED080EE0090936D /* ChatRepository.swift in Sources */,
 				39D2B7CB1ED080EE0090936D /* ChatRepositoryFactory.swift in Sources */,
+				92F3D51C1F64528300A0D9FA /* ReceiverViewController.swift in Sources */,
 				39D2B7CC1ED080EE0090936D /* ChatUtils.swift in Sources */,
 				39D2B7CD1ED080EE0090936D /* LightStreamerChatRepository.swift in Sources */,
 				39D2B7CE1ED080EE0090936D /* TextEntry.swift in Sources */,
@@ -1106,9 +1132,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				391A3BC71EB7E5BB00A4999F /* ViewController.swift in Sources */,
+				92F3D5201F64529C00A0D9FA /* SenderViewController.swift in Sources */,
 				391A3BDD1EB7E5F800A4999F /* PubnubChatRepository.swift in Sources */,
 				391A3BD31EB7E5EC00A4999F /* ChatRepository.swift in Sources */,
 				391A3BD41EB7E5EC00A4999F /* ChatRepositoryFactory.swift in Sources */,
+				92F3D5191F64528300A0D9FA /* ReceiverViewController.swift in Sources */,
 				391A3BD51EB7E5EC00A4999F /* ChatUtils.swift in Sources */,
 				39A66B1D1EC79C2B009B24BB /* LightStreamerChatRepository.swift in Sources */,
 				391A3BD61EB7E5EC00A4999F /* TextEntry.swift in Sources */,
