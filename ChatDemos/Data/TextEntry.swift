@@ -12,5 +12,6 @@ struct TextEntry {
     var value : String
     var delay : String
     var size : String
+    var delayValue: Int
     
 }

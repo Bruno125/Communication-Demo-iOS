@@ -260,6 +260,9 @@
                                 <rect key="frame" x="164" y="83" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Emitir"/>
+                                <connections>
+                                    <action selector="actionEmit:" destination="rOl-XR-aaw" eventType="touchUpInside" id="Ji6-9I-Goc"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rj-ER-lqE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
@@ -289,6 +292,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="amountSentLabel" destination="wEg-CW-0v7" id="BLK-co-nPs"/>
                         <outlet property="navigationBar" destination="9rj-ER-lqE" id="h9Z-5m-PIU"/>
                     </connections>
                 </viewController>

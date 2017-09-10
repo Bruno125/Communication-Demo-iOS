@@ -12,7 +12,7 @@ import RMQClient
 
 class RabbitMQChatRepository : ChatRepository{
 
-    private let URI = "amqp://mobile:1234@10.11.80.80:5673"
+    private let URI = "amqp://mobile:1234@192.168.1.38:5673"
     private let USERNAME = "mobile"
     private let PASS = "1234"
     

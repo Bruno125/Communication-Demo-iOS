@@ -46,18 +46,20 @@ struct ChatUtils{
             return nil
         }
         
-        var content = "--", delay = "--", size = "--"
+        var content = "--", delay = 0, size = "--"
         if let value = info[KEY_VALUE] as? String{
             content = value
             size = "\(content.utf8.count) bytes"
         }
+        df.dateFormat = "y-MM-dd H:m:ss.SSSS"
         if let messageTimestamp = info[KEY_TIMESTAMP] as? String,
             let messageDate = df.date(from: messageTimestamp),
             let currentDate = df.date(from: getTimestamp()){
-            let difference = currentDate.offset(from: messageDate)
-            delay = "\(difference) ms"
+            delay = currentDate.offset(from: messageDate)
+        
         }
-        return TextEntry(value: content, delay: delay, size: size)
+        
+        return TextEntry(value: content, delay: "\(delay) ms", size: size, delayValue: delay)
     }
     
     private static func getTimestamp() -> String {

@@ -12,7 +12,7 @@ import RxSwift
 class LightStreamerChatRepository: NSObject, ChatRepository{
     
     // Configuration for local installation
-    let SERVER_URL = "http://10.11.80.88:8080"
+    let SERVER_URL = "http://192.168.1.38:8080"
     let ADAPTER_SET = "CHAT"
     let DATA_ADAPTER = "CHAT_ROOM"
     
