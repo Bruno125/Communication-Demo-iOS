@@ -18,7 +18,7 @@ protocol ChatRepository{
 
 The `send` method allows the client to send an string of text, for itto be distributed to the other clients.
 
-The `receive` method returns `∫<Message>`. This represents an stream of messages, which will allow us to be notified each time another device emits a message. The `Observable` class comes from the RxSwift library.
+The `receive` method returns `<Message>`. This represents an stream of messages, which will allow us to be notified each time another device emits a message. The `Observable` class comes from the RxSwift library.
 
 Once the interface is defined, each technology will implement it using it's own dependencies. We have created 5 implementations:
 

@@ -16,19 +16,19 @@ This project uses Firebase iOS SDK
 
 ### Sequence Diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Firebase/Diagrams/Diagrama%20de%20secuencia-%20Firebase.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Firebase/Diagrams/Sequence%20Diagram%20Firebase.png)
 
 ### Components Diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Firebase/Diagrams/Diagrama%20de%20componentes%20Firebase.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Firebase/Diagrams/Components%20Diagram%20Firebase.png)
 
 ### Deployment Diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Firebase/Diagrams/Diagrama%20de%20despliegue.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Firebase/Diagrams/Deployment%20Diagram%20Firebase.png)
 
 ## Immplementation
 
-1. On the `Podfile` add the Ably dependency:
+1. On the `Podfile` add the Firebase dependency:
 
 `pod 'Firebase'`
 `pod 'Firebase/Database'`

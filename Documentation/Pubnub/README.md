@@ -15,19 +15,19 @@ This project uses the Pubnub Android SDK
 
 ### Sequence diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Pubnub/Diagrams/Diagrama%20de%20secuencia_%20Pubnub.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Pubnub/Diagrams/Sequence%20Diagram%20Pubnub.png)
 
 ### Components diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Pubnub/Diagrams/Diagrama%20de%20componentes%20Pubnub.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Pubnub/Diagrams/Components%20Diagram%20Pubnub.png)
 
 ### Deployment diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Pubnub/Diagrams/Diagrama%20de%20despliege-%20Pubnub.png)
+![alt tag]( )
 
 ## Implementation
 
-1. On the `Podfile` add the Ably dependency:
+1. On the `Podfile` add the Pubnub dependency:
 
 `pod 'Pubnub'`
 

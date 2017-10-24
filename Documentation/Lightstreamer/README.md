@@ -6,35 +6,35 @@
 
 ## Specifications
 
-This project uses Lighstreamer Android SDK
-- Version: 3.0.0
-- Compatible with Java, Kotlin
-- Min SDK: 14
+This project uses Lighstreamer iOS SDK
+- Version: 2.1.2
+- Compatible with Objective C, Swift
+- Min iOS version: 8.0
 
 ## Diagrams
 
 ### Sequence Diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Firebase/Diagrams/Diagrama%20de%20secuencia-%20Firebase.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Lightstreamer/Diagrams/Sequence%20Diagram%20Lightstreamer.png)
 
 ### Components Diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Firebase/Diagrams/Diagrama%20de%20componentes%20Firebase.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Lightstreamer/Diagrams/Components%20Diagram%20Lightstreamer.png)
 
 ### Deployment Diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Firebase/Diagrams/Diagrama%20de%20despliegue.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Lightstreamer/Diagrams/Deployment%20Diagram%20Lightstreamer.png)
 
 ## Implementation
 
 
-1. On the `build.gradle` file of the [app](https://github.com/Bruno125/Communication-Demo-Android/blob/documentation/app/build.gradle) module, go to the `dependencies` section, and add the dependency to the project: 
-   
-   `compile 'com.lightstreamer:ls-android-client:3.0.0'` (o la última versión disponible)
+1. On the `Podfile` add the dependency:
+
+`pod 'Lighstreamer_iOS_Client'`
 
 2. Create a Lighstreamer client, specifying the modo, item, adapter, and elements that will be transferred.
 
-```kotlin
+```swift
 
 val serverAddress = "http://YOUR_SERVER_IP:YOUR_SERVER_PORT"
 val subscription = Subscription("DISTINCT","chat_room", arrayOf("your","variables")).apply {
@@ -56,7 +56,7 @@ val lsClient = LightstreamerClient(serverAddress,"CHAT").apply {
 
 4. Subscribre to the channel implementing the `SubscriptionListener` interface, to handle the messages that we receive.
 
-```kotlin
+```swift
 override fun onItemUpdate(p0: ItemUpdate?) {
     try {
         if(p0 != null && p0.fields != null){
@@ -82,13 +82,13 @@ override fun onItemUpdate(p0: ItemUpdate?) {
 
 5. To send messages, call the `sendMessage` method on the client object (indicating the chat name):
 
-```kotlin
+```swift
 lsClient.sendMessage("CHAT| your message")
 ```
 
 The final resut is the class [`LightstreamerChatRepository`](https://github.com/Bruno125/Communication-Demo-Android/blob/documentation/app/src/main/java/com/brunoaybar/chatdemos/data/impl/LighstreamerChatRepository.kt)
 
-```kotlin
+```swift
 class LightstreamerRepository : ChatRepository,
         SubscriptionListener by LightstreamerListenerLogger,
         ClientListener by LightstreamerListenerLogger{

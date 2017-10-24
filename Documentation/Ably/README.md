@@ -25,15 +25,15 @@ This project uses Ably's iOS SDK
 
 ### Sequence diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Ably/Diagrams/Diagrama%20de%20secuencia-%20Ably.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Ably/Diagrams/Sequence%20Diagram%20Ably.png)
 
 ### Components diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Ably/Diagrams/Diagrama%20de%20componentes%20Ably.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Ably/Diagrams/Components%20Diagram%20Ably.png)
 
 ### Deployment diagram
 
-![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-Android/documentation/Documentation/Ably/Diagrams/Diagrama%20de%20despliege-%20Ably.png)
+![alt tag](https://raw.githubusercontent.com/Bruno125/Communication-Demo-iOS/master/Documentation/Ably/Diagrams/Deployment%20Diagram%20Ably.png)
 
 ## Implementation
 
